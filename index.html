@@ -1,0 +1,522 @@
+<html lang="en" class="w-mod-js w-mod-no-touch w-mod-video w-mod-no-ios site-scrollbar">
+
+<head>
+  <meta charset="utf-8">
+  <title>Product Compare</title>
+  <link rel="icon" type="image/png" href="./images/product_compare_logo_small.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="https://d3e54v103j8qbb.cloudfront.net/gen/css/site.03b39f230d.css">
+  <link rel="stylesheet" type="text/css" href="https://d3e54v103j8qbb.cloudfront.net/gen/css/site-designer.8e0bbf277b.css">
+  <!--/*<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en._gEgtcvh1fE.O/m=auth/exm=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCNp1OHO8NH9OIu_qsqhhE2s-Jq6qA/cb=gapi.loaded_1" async=""></script>*/-->
+  <!--/*<script src="https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en._gEgtcvh1fE.O/m=plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AGLTcCNp1OHO8NH9OIu_qsqhhE2s-Jq6qA/cb=gapi.loaded_0" async=""></script>*/-->
+  <!--/*<script type="text/javascript">window.__wf_design = true;</script>*/-->
+  <!--<script src="https://d3e54v103j8qbb.cloudfront.net/gen/js/site/modernizr.49e98d68bb.js"></script>-->
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>-->
+  <!--<script src="https://d3e54v103j8qbb.cloudfront.net/gen/js/site/webflow.6689149237.js" gapi_processed="true"></script>-->
+  <!--<style type="text/css"></style>-->
+  <style type="text/css">
+  body {
+  background-color: #3f474d;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h1 {
+  margin: 10px 0px 24px;
+  font-family: 'Petit Formal Script', sans-serif;
+  color: #2d3338;
+  font-size: 69px;
+  line-height: 54px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-shadow: none;
+}
+
+h2 {
+  margin: 0px 0px 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+h3 {
+  margin: 5px 0px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+h4 {
+  margin: 10px 0px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+h5 {
+  margin: 10px 0px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+h6 {
+  margin: 10px 0px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 300;
+  letter-spacing: 0px;
+  text-shadow: none;
+}
+
+.button {
+  display: block;
+  width: 30%;
+  height: 54px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 4px 29px;
+  float: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #f90;
+  -webkit-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #db8f1d;
+}
+
+.button:active {
+  background-color: #c78015;
+  box-shadow: inset 0 4px 12px -4px rgba(0, 0, 0, .29);
+}
+
+.subtitle {
+  margin-right: 89px;
+  margin-bottom: 63px;
+  margin-left: 89px;
+  font-family: Vollkorn, serif;
+  color: #74737a;
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.field {
+  display: none;
+  width: 70%;
+  height: 54px;
+  padding-right: 20px;
+  padding-left: 20px;
+  float: left;
+  border: 0px solid #000;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  background-color: hsla(0, 0%, 100%, .7);
+  box-shadow: inset 0 0 8px 0 transparent, inset 0 0 0 1px rgba(0, 0, 0, .16);
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  color: #262c46;
+  font-size: 16px;
+}
+
+.sign-up-form {
+  margin-bottom: 66px;
+}
+
+.social-widget {
+  width: 100px;
+  float: left;
+  -webkit-transition: opacity 300ms ease;
+  transition: opacity 300ms ease;
+}
+
+.social-widget-wrapper {
+  display: block;
+  width: 223px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+.success-message {
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #209981;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.spread-word {
+  margin-top: 12px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  color: hsla(0, 0%, 100%, .6);
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+.error-message {
+  padding-bottom: 5px;
+  border-radius: 2px;
+  background-color: #5c3245;
+}
+
+.header-section {
+  height: 100%;
+  padding-top: 104px;
+  background-color: #e0ddd7;
+  text-align: center;
+}
+
+.footer-section {
+  display: none;
+  padding-top: 38px;
+  padding-bottom: 34px;
+  background-color: #3f474d;
+  color: #7e7c87;
+}
+
+.copyright {
+  color: hsla(0, 0%, 100%, .52);
+}
+
+.bars-wrapper {
+  background-color: #1abc9c;
+}
+
+.bar {
+  width: 14.285%;
+  height: 7px;
+  float: left;
+  background-color: #1abc9c;
+}
+
+.bar._2 {
+  background-color: #f2ca27;
+}
+
+.bar._3 {
+  background-color: #e67e22;
+}
+
+.bar._4 {
+  background-color: #16a085;
+}
+
+.bar._5 {
+  background-color: #2980b9;
+}
+
+.bar._6 {
+  background-color: #e74c3c;
+}
+
+.container {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.image-crop {
+  display: none;
+  overflow: hidden;
+  height: 260px;
+}
+
+.social-section {
+  display: none;
+  padding-top: 58px;
+  padding-bottom: 58px;
+  background-color: #f90;
+  text-align: center;
+}
+
+.share-btn {
+  display: inline-block;
+  width: 61px;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.share-wrapper {
+  display: none;
+  margin-top: 32px;
+}
+
+.refer {
+  display: none;
+  color: hsla(0, 0%, 100%, .59);
+}
+
+.align-right {
+  text-align: right;
+}
+
+.social-btn {
+  margin-left: 17px;
+  opacity: 0.44;
+}
+
+.title {
+  font-family: Montserrat, sans-serif;
+}
+
+.calltoaction {
+  display: block;
+  width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.teaser {
+  margin-top: 39px;
+  box-shadow: 0 0 6px 0 #000;
+}
+
+.installlabel {
+  margin-top: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+.body {
+  height: 100%;
+}
+
+@media (max-width: 991px) {
+  .button {
+    width: 30%;
+  }
+  .subtitle {
+    text-shadow: none;
+  }
+  .field {
+    width: 70%;
+  }
+  .header-section {
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+  }
+  .social-btn {
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
+  }
+  .social-btn:hover {
+    opacity: 0.8;
+  }
+  .teaser {
+    margin-top: 40px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+  .installlabel {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    text-shadow: none;
+  }
+  .button {
+    width: 40%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .subtitle {
+    margin-right: 0px;
+    margin-left: 0px;
+    text-shadow: none;
+  }
+  .field {
+    width: 60%;
+    border-top-right-radius: 0px;
+  }
+  .sign-up-form {
+    margin-bottom: 38px;
+  }
+  .header-section {
+    padding-top: 37px;
+  }
+  .footer-section {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
+  .container {
+    padding-right: 33px;
+    padding-left: 33px;
+  }
+  .social-section {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .installlabel {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 479px) {
+  h2 {
+    font-size: 30px;
+    line-height: 31px;
+    text-shadow: none;
+  }
+  p {
+    font-size: 17px;
+    text-shadow: none;
+  }
+  .button {
+    width: 100%;
+    margin-left: 0px;
+    padding-top: 6px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+  }
+  .subtitle {
+    margin-bottom: 44px;
+    font-size: 22px;
+    line-height: 26px;
+    text-shadow: none;
+  }
+  .field {
+    width: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-align: center;
+  }
+  .social-widget {
+    width: 97px;
+  }
+  .social-widget-wrapper {
+    display: block;
+    width: 215px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+  }
+  .copyright {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  .container {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .image-crop {
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .social-section {
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+  .align-right {
+    text-align: center;
+  }
+  .social-btn {
+    margin-right: 17px;
+  }
+  .title {
+    font-size: 58px;
+  }
+  .installlabel {
+    margin-top: 10px;
+  }
+}
+</style>
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Bitter:400,700,400italic|Changa One:400,400italic|Droid Sans:400,700|Droid Serif:400,700|Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic|Great Vibes:400|Inconsolata:400,700,400italic,700italic|Lato:100,200,300,400,700,900,100italic,200italic,300italic,400italic,700italic,900italic|Merriweather:300,400,700,900|Montserrat:400,700|Open Sans:300,400,600,700,800,300italic,400italic,600italic,700italic,800italic|Oswald:300,400,700|PT Sans:400,700,400italic,700italic|PT Serif:400,700,400italic,700italic|Petit Formal Script:400|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Varela:400|Varela Round:400|Vollkorn:400,700,400italic,700italic&amp;subset=latin">
+<!--<script type="text/javascript">WebFont.load({ custom: { families: [] } });</script>-->
+
+</head>
+
+<body class="body">
+  <div class="bars-wrapper w-clearfix">
+    <div class="bar"></div>
+    <div class="_2 bar"></div>
+    <div class="_3 bar"></div>
+    <div class="_4 bar"></div>
+    <div class="_5 bar"></div>
+    <div class="_6 bar"></div>
+    <div class="bar"></div>
+  </div>
+  <div class="header-section">
+    <div class="container w-container">
+      <h1 class="title">Product Compare</h1>
+      <p class="subtitle">Spec comparison done right. Compare price, reviews, and features - instantly and effortlessly</p>
+      <div class="button">
+        <div class="installlabel">Install Now (Chrome)</div>
+      </div>
+      <div class="image-crop"></div>
+    </div><img class="teaser" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1920px) 100vw, 1920px"
+      src="images/product_compare.png" srcset="images/product_compare.png 500w, images/product_compare.png 800w, images/product_compare.png 1080w, images/product_compare.png 1600w, images/product_compare.png 1920w">
+  </div>
+  <!--<div class="social-section">
+    <div class="w-container">
+      <h2>Spread the word about Pixley!</h2>
+      <div class="refer">Free downloads for people who refer 10 friends.&nbsp;</div>
+      <div class="share-wrapper">
+        <div class="share-btn w-widget w-widget-facebook">
+          <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Ffacebook.com%2Fwebflow&amp;layout=box_count&amp;locale=en_US&amp;action=like&amp;show_faces=false&amp;share=false"
+            scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 55px; height: 65px;"></iframe>
+        </div>
+        <div class="share-btn w-widget w-widget-twitter">
+          <div class="w-widget-twitter-count-shim w--vertical">
+            <div class="w-widget-twitter-count-inner">...</div>
+          </div>
+          <div class="w-widget-twitter-count-clear"></div>
+          <iframe src="https://platform.twitter.com/widgets/tweet_button.html#url=http%3A%2F%2Fwebflow.com&amp;counturl=webflow.com&amp;text=Check%20out%20this%20site&amp;count=vertical&amp;size=m&amp;dnt=true"
+    scrolling="no" frameborder="0" allowtransparency="true" style="border: none; overflow: hidden; width: 62px; height: 21px;"></iframe>
+        </div>
+        <div class="share-btn w-widget w-widget-gplus">
+          <div class="g-plusone" data-href="http://webflow.com" data-size="tall" data-annotation="bubble" data-recommendations="false"
+    id="___plusone_0"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-section">
+  <div class="w-container">
+    <div class="w-row">
+      <div class="w-col w-col-6 w-col-small-6">
+        <div class="copyright">© 2014 Pixley App. All right reserved.&nbsp;</div>
+      </div>
+      <div class="align-right w-col w-col-6 w-col-small-6">
+        <a class="social-btn w-inline-block" href="http://facebook.com/webflowapp"><img src="images/facebook-icon.svg">
+        </a>
+        <a class="social-btn w-inline-block" href="http://twitter.com/webflowapp"><img src="images/twitter-icon.svg">
+        </a>
+        <a class="social-btn w-inline-block" href="mailto:support@webflow.com"><img src="images/email-icon.svg">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>-->
+</body>
+
+</html>
