@@ -447,6 +447,12 @@ p {
   }
   .installlabel {
     margin-top: 10px;
+     cursor: pointer;
+   
+  }
+
+  #callToAction {
+     cursor: pointer;
   }
 }
 </style>
@@ -469,8 +475,10 @@ p {
     <div class="container w-container">
       <h1 class="title">Product Compare</h1>
       <p class="subtitle">Spec comparison done right. Compare price, reviews, and features - instantly and effortlessly</p>
-      <div class="button">
+      <div id="callToAction" class="button">
         <div class="installlabel">Install Now (Chrome)</div>
+        <!--<a href="https://chrome.google.com/webstore/detail/product-compare/neifoffjlldjmaecdcohjdfdnbdbkean"><div class="installlabel">Install Now (Chrome)</div></a>-->
+        <!--<a href="https://chrome.google.com/webstore/detail/product-compare/neifoffjlldjmaecdcohjdfdnbdbkean" class="installlabel">Install Now (Chrome)</a>-->
       </div>
       <div class="image-crop"></div>
     </div><img class="teaser" sizes="(max-width: 479px) 94vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1920px) 100vw, 1920px"
@@ -517,6 +525,13 @@ p {
     </div>
   </div>
 </div>-->
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("callToAction").addEventListener("click", function(){
+    window.location.href = "https://chrome.google.com/webstore/detail/product-compare/neifoffjlldjmaecdcohjdfdnbdbkean";
+  });
+});
+</script>
 </body>
 
 </html>
